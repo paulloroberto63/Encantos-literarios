@@ -4,6 +4,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    animation: tittle 1s both;
 
    & button {
        padding: .8rem 1rem;
@@ -36,11 +37,13 @@ nav {
      
     color: var(--text-title);
     font: var(--title-lg);
+    animation: tittle 1s both;
   }
 
   & h2 {
     color: var(--text-body);
-    font: var(--subtitle)
+    font: var(--subtitle);
+    animation: tittle 1s both;
   }
 }
 
@@ -50,5 +53,31 @@ nav {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    
+    opacity: 0;
+    animation: magic 5s both;
+  }
+
+
+@keyframes tittle {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes magic {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

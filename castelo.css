@@ -1,0 +1,119 @@
+.castelo {
+    padding-block: 228px 447px;
+
+    & h1 {
+        color: var(--text-title);
+        font: var(--title-sm);
+    }
+    
+    & h2 {
+        font: var(--subtitle);
+        
+    }
+}
+
+.kit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.castelo {
+    padding-block: 228px 447px;
+
+    & h1 {
+        color: var(--text-title);
+        font: var(--title-sm);
+    }
+    
+    & h2 {
+        font: var(--subtitle);
+        
+    }
+}
+
+.kit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Book {
+    padding: 160px 180px 169px 473px;
+
+    & h2:nth-child(1) {
+        position: relative;
+        z-index: -1;
+        right: 580px;
+        top: 86px;
+}
+        
+img[src*="book"] {
+    width: 467px;
+    height: 617px;
+}
+
+
+  img[src*="arrow"] {
+    padding-bottom: 558px;
+  }
+
+  img[src*="bookmark-yellow"] {
+    width: 172px;
+    height: 536px;
+    transform: rotate(12deg);
+    z-index: -1;
+    position: relative;
+     bottom: 100px;
+     right: 58px;
+}
+
+img[src*="bookmark-purple"] {
+    width: 172px;
+    height: 536px;
+    transform: rotate(22deg);
+    z-index: -2;
+    position: relative;
+    right: 120px;
+    }
+
+    img[src*="arrow (2)"] {
+        position: relative;
+        z-index: -1;
+        top: 700px;
+        right: 340px;
+    }
+
+    & h2:nth-child(7) {
+        position: relative;
+        z-index: -1;
+        top: 160px;
+        left: 100px;
+    }
+     
+    & h2:nth-child(8) {
+        position: relative;
+        z-index: -1;
+        right: 530px;
+        bottom: 280px;
+       
+    }
+    img[src*="pin"] {
+        position: relative;
+        z-index: -1;
+        width: 222px;
+        height: 254px;
+        transform: rotate(-8deg);
+        bottom: 600px;
+        right: 360px;
+    }
+    
+    img[src*="arrow (3)"] {
+        position: relative;
+        z-index: -1;
+        right: 640px;
+        bottom: 250px;
+        }
+}
+

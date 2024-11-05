@@ -1,0 +1,45 @@
+.exclusive {
+  padding: 96px 120px;
+  text-align: center;
+  
+}
+
+  & h2 {
+    color: var(--text-body);
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 200%;
+    
+  }
+
+  & span {
+    color: var(--blue-light);
+  }
+   
+  & img {
+    transition: transform 500ms;
+  }
+
+.icons {
+  display: flex;
+  justify-content:space-evenly;
+  margin-inline: auto;
+  
+  & img {
+    transition: transform 500ms;
+  }
+
+}
+
+img[src*="Book"]:hover {
+  transform: scale(1.1) rotate(15deg);
+}
+
+img[src*="Ball"]:hover {
+  transform: scale(1.1) rotate(-15deg);
+}
+
+img[src*="Ouija"]:hover {
+  transform: scale(1.1) rotate(15deg);
+}
