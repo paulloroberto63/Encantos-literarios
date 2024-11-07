@@ -1,5 +1,5 @@
 .castelo {
-    padding-block: 228px 447px;
+    padding-block: 228px 300px;
 
     & h1 {
         color: var(--text-title);
@@ -20,7 +20,7 @@
 
 
 .castelo {
-    padding-block: 228px 447px;
+    padding-block: 228px 200px;
 
     & h1 {
         color: var(--text-title);
@@ -29,8 +29,7 @@
     
     & h2 {
         font: var(--subtitle);
-        
-    }
+        }
 }
 
 .kit {
@@ -40,80 +39,113 @@
 }
 
 .Book {
-    padding: 160px 180px 169px 473px;
+    padding: 10px 640px 169px 473px;
 
-    & h2:nth-child(1) {
-        position: relative;
-        z-index: -1;
-        right: 580px;
-        top: 86px;
-}
-        
-img[src*="book"] {
+    & h2 {
+        font: var(--subtitle);
+        transition: all 400ms;
+        }
+
+   img[src*="book"] {
     width: 467px;
     height: 617px;
+    position: absolute;
+    z-index: 1;
+    transition: all 400ms;
 }
-
-
-  img[src*="arrow"] {
-    padding-bottom: 558px;
-  }
-
-  img[src*="bookmark-yellow"] {
+& img[src*="bookmark-yellow"] {
     width: 172px;
     height: 536px;
-    transform: rotate(12deg);
+    position: relative;
     z-index: -1;
-    position: relative;
-     bottom: 100px;
-     right: 58px;
+    top: 20px;
+    left: 300px;
+    transition: all 400ms;
 }
 
-img[src*="bookmark-purple"] {
+& img[src*="bookmark-purple"] {
     width: 172px;
     height: 536px;
-    transform: rotate(22deg);
-    z-index: -2;
     position: relative;
-    right: 120px;
+    z-index: -2;
+    top: 20px;
+    left: 120px;
+    transition: all 400ms;
+}
+
+& img[src*="arrow (1)"] {
+   position: relative;
+   z-index: -1;
+   bottom: 420px;
+   left: 400px;
+   transition: all 400ms;
+}
+
+& img[src*="arrow (2)"] {
+    position: relative;
+    z-index: -1;
+    top: 20px;
+    right: 50px;
+    transition: all 400ms;
+ }
+
+ & img[src*="arrow (3)"] {
+    position: relative;
+    z-index: -1;
+    bottom: 250px;
+    left: 50px;
+    transition: all 400ms;
+ }
+
+ & img[src*="pin"] {
+   width: 222px;
+   height: 254px;
+   position: relative;
+   z-index: -1;
+   right: 80px;
+   bottom: 190px;
+   transition: all 400ms;
+ }
+
+& h2:nth-child(1) {
+  position: relative;
+  top: 40px;
+  left: 33px;
+  z-index: -1;
+  transition: all 400ms;
+}
+
+
+&:hover {
+    & img[src*="bookmark-yellow"] {
+       transform: translate(119px, -100px) rotate(15deg);
+    }
+    & img[src*="bookmark-purple"] {
+        transform: translate(238px, 1px) rotate(26deg);
+    }
+    & img[src*="arrow (1)"] {
+        transform: translate(-360px, -114px);
+     }
+     & img[src*="pin"] {
+        transform: translate(-160px, 60px);
+     }
+    & h2:nth-child(1) {
+        transform: translate(-350px, -90px);
     }
 
-    img[src*="arrow (2)"] {
-        position: relative;
-        z-index: -1;
-        top: 700px;
-        right: 340px;
+    & img[src*="arrow (2)"] {
+        transform: translate(177px, 130px);
     }
 
-    & h2:nth-child(7) {
-        position: relative;
-        z-index: -1;
-        top: 160px;
-        left: 100px;
+    & img[src*="arrow (3)"] {
+        transform: translate(-212px, -100px);
     }
      
+    & h2:nth-child(7) {
+        transform: translate(340px, 158px);
+    }
     & h2:nth-child(8) {
-        position: relative;
-        z-index: -1;
-        right: 530px;
-        bottom: 280px;
-       
+        transform: translate(-290px, -240px);
     }
-    img[src*="pin"] {
-        position: relative;
-        z-index: -1;
-        width: 222px;
-        height: 254px;
-        transform: rotate(-8deg);
-        bottom: 600px;
-        right: 360px;
     }
-    
-    img[src*="arrow (3)"] {
-        position: relative;
-        z-index: -1;
-        right: 640px;
-        bottom: 250px;
-        }
 }
-
