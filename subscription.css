@@ -1,0 +1,106 @@
+
+.subscription {
+   padding: 101px 248px 189px 248px;
+   
+   
+    & h1 {
+        color: var(--text-title);
+        font: var(--title-md);
+        text-align: center;
+    }
+}
+
+.subscription-content {
+    display: flex;
+    justify-content:center;
+    padding-top: 146px;
+}
+
+
+
+.cards {
+    padding: 32px 28px 28px 38px;
+    background-color: var(--shape-stroke);
+    border-radius: 24px;
+    
+    & button {
+        border: none;
+        font: var(--body-sm);
+        font-weight: bold;
+        color: var(--text-title);
+        background-color: var(--pink-dark);
+        padding: 20px 80px;
+        margin-top: 24px;
+        border-radius: 10px;
+        
+        &:hover {
+            background-color: var(--pink-base);
+            transition: 400ms;
+        }       
+    }
+
+   
+
+    & li {
+        background: url(/assets/Vector.svg) no-repeat;
+        background-size: contain;
+        background-position:unset;
+        padding-left:  37px;
+        padding-block: 10px;
+        list-style: none;
+        }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+    & h2 {
+        font: var(--title-xs);
+        color: var(--pink-light);
+    }
+
+    & span {
+        font: var(--tag);
+        color: var(--text-body);
+        text-transform: uppercase;
+        padding: 9px 20px;
+        background-color: var(--shape-base);
+        border-radius: 999px;
+    }
+}
+
+.month {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    & h1 {
+        font: var(--title-md);
+        }
+
+    & span {
+        font: var(--title-xs);
+    }
+}
+
+.year {
+    display: flex;
+    justify-content: start;
+
+    & p {
+        font: var(--subtitle);
+        color: var(--text-label)
+    }
+}
+
+.list {
+    display: grid;
+    gap: 5px;
+    justify-items: start;
+    padding-top: 70px;
+    font: var(--subtitle);
+    color: var(--text-body);
+}
+
