@@ -1,6 +1,6 @@
 
 .subscription {
-   padding: 101px 248px 189px 248px;
+   padding: 101px 248px 500px 248px;
    
    
     & h1 {
@@ -13,7 +13,7 @@
 .subscription-content {
     display: flex;
     justify-content:center;
-    padding-top: 146px;
+    padding-block: 146px  500px;
     position: relative;
 
     &:hover {
@@ -136,7 +136,7 @@
 
 .cards:nth-child(2) {
     z-index: 1;
-    left: 610px;
+    left: 840px;
     
     & h2 {
         color: var(--blue-light);
@@ -187,7 +187,7 @@
 
 .cards:nth-child(3) {
    z-index: 1;
-    right: 610px;
+    right: 850px;
     & h2 {
         color: var(--blue-light);
     }

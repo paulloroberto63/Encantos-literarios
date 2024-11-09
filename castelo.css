@@ -18,28 +18,8 @@
     justify-content: center;
 }
 
-
-.castelo {
-    padding-block: 228px 200px;
-
-    & h1 {
-        color: var(--text-title);
-        font: var(--title-sm);
-    }
-    
-    & h2 {
-        font: var(--subtitle);
-        }
-}
-
-.kit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .Book {
-    padding: 10px 640px 169px 473px;
+    padding: 10px 100px 169px 850px;
 
     & h2 {
         font: var(--subtitle);
@@ -93,7 +73,7 @@
     position: relative;
     z-index: -1;
     bottom: 250px;
-    left: 50px;
+    left: 280px;
     transition: all 400ms;
  }
 
@@ -102,7 +82,7 @@
    height: 254px;
    position: relative;
    z-index: -1;
-   right: 80px;
+   left: 100px;
    bottom: 190px;
    transition: all 400ms;
  }
@@ -110,10 +90,25 @@
 & h2:nth-child(1) {
   position: relative;
   top: 40px;
-  left: 33px;
+  right: 400px;
   z-index: -1;
   transition: all 400ms;
 }
+
+& h2:nth-child(7) {
+    position: relative;
+    top: 10px;
+    right: 300px;
+    z-index: -1;
+    transition: all 400ms;
+  }
+
+  & h2:nth-child(8) {
+    position: relative;
+    right: 300px;
+    z-index: -1;
+    transition: all 400ms;
+  }
 
 
 &:hover {
@@ -138,14 +133,14 @@
     }
 
     & img[src*="arrow (3)"] {
-        transform: translate(-212px, -100px);
+        transform: translate(-260px, -100px);
     }
      
     & h2:nth-child(7) {
-        transform: translate(340px, 158px);
+        transform: translate(180px, 158px);
     }
     & h2:nth-child(8) {
-        transform: translate(-290px, -240px);
+        transform: translate(-417px, -240px);
     }
     }
 }
