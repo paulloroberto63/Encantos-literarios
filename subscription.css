@@ -14,14 +14,42 @@
     display: flex;
     justify-content:center;
     padding-top: 146px;
+    position: relative;
+
+    &:hover {
+        .cards:nth-child(2) {
+        transform: translateX(360px) rotate(10deg);
+        transition: all 800ms;
+        }
+
+        .cards:nth-child(1) {
+            transform: translateY(-60px);
+            transition: all 800ms;
+
+        }
+
+        .cards:nth-child(3) {
+            transform: translateX(-360px) rotate(-10deg);
+            transition: all 800ms;
+
+        }
+ }
 }
 
 
 
 .cards {
-    padding: 32px 28px 28px 38px;
+    padding: 32px 32px 28px 32px;
     background-color: var(--shape-stroke);
     border-radius: 24px;
+    position: absolute;
+   
+    &:hover {
+        background-color: var(--shape-hover);
+        border-color: var(--shape-hover);
+        filter: drop-shadow(0px 0px 1.75rem rgb(20, 74, 114, 0.5));
+        z-index: 3 !important;
+    }
     
     & button {
         border: none;
@@ -30,13 +58,13 @@
         color: var(--text-title);
         background-color: var(--pink-dark);
         padding: 20px 80px;
-        margin-top: 24px;
+        margin-top: 26px;
         border-radius: 10px;
         
         &:hover {
             background-color: var(--pink-base);
             transition: 400ms;
-        }       
+        }
     }
 
    
@@ -97,10 +125,92 @@
 
 .list {
     display: grid;
-    gap: 5px;
+    gap: 12px;
     justify-items: start;
-    padding-top: 70px;
+    padding-top: 80px;
     font: var(--subtitle);
     color: var(--text-body);
+}
+
+
+
+.cards:nth-child(2) {
+    z-index: 1;
+    left: 610px;
+    
+    & h2 {
+        color: var(--blue-light);
+    }
+
+    & button {
+        background-color: var(--blue-dark);
+        &:hover {
+            background-color: var(--blue-light);
+            transition: 400ms;
+        }
+    }
+    
+
+    & li {
+        background: url(/assets/Vectorblue.svg) no-repeat;
+        background-size: contain;
+        background-position:unset;
+        padding-left:  37px;
+        padding-block: 10px;
+        list-style: none;
+        }
+   
+}
+
+.list-2 {
+    display: grid;
+    gap: 12px;
+    justify-items: start;
+    padding-top: 30px;
+    font: var(--subtitle);
+    color: var(--text-body);
+}
+
+.list-3 {
+    display: grid;
+    gap: 12px;
+    justify-items: start;
+    padding-top: 129px;
+    font: var(--subtitle);
+    color: var(--text-body);
+}
+
+.cards:nth-child(1) {
+   z-index: 2;
+
+    }
+
+.cards:nth-child(3) {
+   z-index: 1;
+    right: 610px;
+    & h2 {
+        color: var(--blue-light);
+    }
+
+    & button {
+        background-color: var(--blue-dark);
+        &:hover {
+            background-color: var(--blue-light);
+            transition: 400ms;
+        }
+    }
+
+
+    & li {
+        background: url(/assets/Vectorblue.svg) no-repeat;
+        background-size: contain;
+        background-position:unset;
+        padding-left:  37px;
+        padding-block: 10px;
+        list-style: none;
+        }
+
+     
+       
 }
 
